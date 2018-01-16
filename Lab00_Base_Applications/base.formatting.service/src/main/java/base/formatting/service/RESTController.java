@@ -15,7 +15,7 @@ public class RESTController {
         
         RestTemplate restTemplate = new RestTemplate();
         
-		return restTemplate.postForObject("http://localhost:8080/sendMessage/", message, String.class);
+		return restTemplate.postForObject("http://172.30.86.211/sendMessage/", message, String.class);
     }
 	
 	public String defaultMessageResponse( Message message ) {
